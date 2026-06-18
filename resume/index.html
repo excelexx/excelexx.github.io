@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexander Zhang &mdash; Resume</title>
+  <style>
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 13px;
+      line-height: 1.35;
+      color: #000;
+      background: #fff;
+      margin: 0;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 40px 64px;
+    }
+
+    /* ---------- Header ---------- */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .header h1 {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 0 0 4px;
+      letter-spacing: 0.3px;
+    }
+
+    .header .contact {
+      font-size: 12px;
+    }
+
+    .header .contact a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .header .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .header .meta {
+      text-align: right;
+      font-size: 12px;
+      white-space: nowrap;
+      padding-top: 4px;
+    }
+
+    .rule {
+      border: none;
+      border-top: 1.5px solid #000;
+      margin: 8px 0 0;
+    }
+
+    /* ---------- Sections ---------- */
+    h2 {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 18px 0 4px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #000;
+    }
+
+    /* ---------- Entries ---------- */
+    .entry {
+      margin-top: 9px;
+    }
+
+    .entry-head,
+    .entry-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .entry .org { font-weight: bold; }
+    .entry .loc { font-weight: bold; white-space: nowrap; }
+    .entry .title { font-style: italic; }
+    .entry .date { font-style: italic; white-space: nowrap; }
+
+    ul {
+      margin: 3px 0 0;
+      padding-left: 20px;
+    }
+
+    li { margin: 2px 0; }
+
+    a { color: #000; }
+
+    .info { margin-top: 6px; }
+    .info li { margin: 3px 0; }
+
+    @media (max-width: 540px) {
+      .page { padding: 32px 18px 48px; }
+      .header { flex-direction: column; gap: 4px; }
+      .header h1 { font-size: 23px; }
+      .header .meta { text-align: left; padding-top: 0; }
+      .entry-head, .entry-sub { flex-direction: column; gap: 0; }
+      .entry .loc, .entry .date { white-space: normal; }
+    }
+
+    @media print {
+      .page { padding: 0; max-width: none; }
+      body { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="header">
+      <div class="header-left">
+        <h1>Alexander Zhang</h1>
+        <div class="contact">
+          <a href="mailto:zdfzdf@gmail.com">zdfzdf@gmail.com</a>
+          &nbsp;|&nbsp;
+          <a href="https://www.linkedin.com/in/alexanderzhang314" target="_blank" rel="noopener">linkedin.com/in/alexanderzhang314</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/excelexx" target="_blank" rel="noopener">github.com/excelexx</a>
+        </div>
+      </div>
+      <div class="meta">
+        University of Oxford<br>
+        Oxford, UK
+      </div>
+    </header>
+    <hr class="rule">
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">University of Oxford</span>
+          <span class="loc">Oxford, UK</span>
+        </div>
+        <div class="entry-sub">
+          <span class="title">Bachelor of Arts in Mathematics</span>
+          <span class="date"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">Mason AI</span>
+          <span class="loc"></span>
+        </div>
+        <div class="entry-sub">
+          <span class="title">Software Engineering Intern</span>
+          <span class="date">Summer 2026</span>
+        </div>
+        <ul>
+          <li>Optimized GitHub Actions CI/CD pipelines to automate testing and deployment workflows for a production AI platform</li>
+          <li>Investigated and resolved bugs across a TypeScript/Next.js full-stack codebase, improving reliability and developer experience</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">TopsOJ.com Math Practice Platform</span>
+          <span class="loc"></span>
+        </div>
+        <div class="entry-sub">
+          <span class="title">Founder</span>
+          <span class="date">2023 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Grew <a href="https://www.topsoj.com" target="_blank" rel="noopener">www.TopsOJ.com</a> to 18,000+ active users, 100,000+ submissions, and 400,000+ website visits</li>
+          <li>Led a team of 30 staff across web development, problem setting, contest logistics, platform operations, and outreach</li>
+          <li>Hosted 50+ live contests, including multi-round events with 100+ competitors requiring problem design, testing, grading, scoring, and real-time contest support</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">McGill University</span>
+          <span class="loc">Montreal, Canada</span>
+        </div>
+        <div class="entry-sub">
+          <span class="title">Research Assistant, Financial Mathematics</span>
+          <span class="date">2025 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Assisted Prof. Gregory Weitzner with mathematical finance and economics research on bank information production, margin loans, short-term debt, and contract theory</li>
+          <li>Wrote and checked mathematical proofs, symbolic derivations, and Mathematica computations for theoretical models in financial markets and information economics</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span class="org">Leading Aces Academy</span>
+          <span class="loc"></span>
+        </div>
+        <div class="entry-sub">
+          <span class="title">Math Instructor</span>
+          <span class="date">2024 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Taught live sessions covering AMC 12 contest topics for a cohort of 25 students, including algebra, geometry, combinatorics, and number theory</li>
+          <li>Worked through solutions to build student problem-solving intuition and contest technique</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong><a href="https://www.topsoj.com" target="_blank" rel="noopener">TopsOJ.com</a></strong>: Online math practice platform, 18,000+ active users, 400,000+ website views</li>
+        <li><strong><a href="https://www.restud.com/bank-information-production-over-the-business-cycle/" target="_blank" rel="noopener">Bank Information Production Over the Business Cycle</a></strong>: <em>Review of Economic Studies</em>, top-five economics journal &mdash; provided research assistance on proofs</li>
+        <li><strong><a href="https://github.com/Festyve/Daedalus" target="_blank" rel="noopener">Daedalus</a></strong>: 3D modelling AR software, JamHacks 2026 Award winner</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>USA Mathematical Olympiad (USAMO) Honourable Mention &mdash; top 120 of 30,000+</li>
+        <li>Top 50 on the Canadian Mathematical Olympiad (CMO), selected from 5,000+</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Additional Information</h2>
+      <ul class="info">
+        <li><strong>Languages:</strong> Python, Java, TypeScript/JavaScript, HTML/CSS, Mathematica, LaTeX</li>
+        <li><strong>Software:</strong> Next.js, React, Node.js, Git, pnpm, Turborepo, Prisma, PostgreSQL</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>

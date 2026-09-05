@@ -1,193 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alexander Zhang</title>
-  <style>
-    html {
-      -webkit-text-size-adjust: 100%;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Alexander Zhang — mathematics, machine learning research and software. Incoming Oxford mathematics student, researcher and founder of TopsOJ.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alexander Zhang">
+    <meta property="og:description" content="Mathematics, machine learning research and software. Starting Mathematics at Oxford in October 2026.">
+    <meta property="og:url" content="https://excelexx.github.io/">
+    <link rel="canonical" href="https://excelexx.github.io/">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alexander Zhang</title>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="Alexander Zhang, back to top">AZ.</a>
+        <nav aria-label="Main navigation">
+          <a href="#research">Research</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
 
-    body {
-      font-family: "Times New Roman", Times, serif;
-      font-size: 16px;
-      line-height: 1.45;
-      color: #000;
-      background: #fff;
-      margin: 0;
-    }
+      <main id="main" tabindex="-1">
+        <section class="intro" aria-labelledby="name">
+          <p class="eyebrow">Mathematics · Machine learning · Software</p>
+          <h1 id="name">Alexander Zhang<span class="name-period">.</span></h1>
+          <div class="intro-bottom">
+            <div class="intro-copy">
+              <p>I like understanding how things work, then building something with what I learn.</p>
+              <p>I’m starting a BA in Mathematics at the University of Oxford in October 2026. My work spans machine learning research, mathematical finance and software. I also founded <a href="https://www.topsoj.com">TopsOJ</a>, a home for people who enjoy solving maths problems.</p>
+            </div>
+            <ul class="contact-links" aria-label="Contact and profiles">
+              <li><a href="mailto:alexzhang200888@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://github.com/excelexx">GitHub <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.linkedin.com/in/alexanderzhang314">LinkedIn <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </div>
+        </section>
 
-    .page {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 64px 24px 96px;
-    }
+        <section class="section" id="research" aria-labelledby="research-heading">
+          <div class="section-label">
+            <span class="section-number" aria-hidden="true">01</span>
+            <h2 id="research-heading">Research</h2>
+          </div>
+          <div class="section-content">
+            <article class="entry">
+              <div class="entry-heading">
+                <h3>Machine learning</h3>
+                <p class="date">2026–present</p>
+              </div>
+              <p class="role">Researcher · University of Oxford</p>
+              <p>I study how language models represent meaning, and how agents make decisions with limited compute. My work explores alignment in the Jacobian subspace of language models and a tempered-Bayes framework for bounded rationality in reinforcement learning.</p>
+              <a class="paper-link" href="https://github.com/excelexx/jspace-convergence/blob/main/paper/neurips_2026.pdf">
+                How Much of Platonic Convergence is Semantic? Measuring Alignment in the Jacobian Subspace <span aria-hidden="true">↗</span>
+              </a>
+              <p class="entry-links"><a href="https://github.com/excelexx/jspace-convergence">Code &amp; experiments <span aria-hidden="true">↗</span></a></p>
+            </article>
 
-    h1 {
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      margin: 0 0 6px;
-      letter-spacing: 0.5px;
-    }
+            <article class="entry">
+              <div class="entry-heading">
+                <h3>Mathematical finance</h3>
+                <p class="date">2025–2026</p>
+              </div>
+              <p class="role">Research assistant · McGill University</p>
+              <p>Working with Professor Gregory Weitzner, I contributed proofs, analytical derivations and Mathematica simulations to research on information production, margin lending and rational-expectations equilibria.</p>
+              <ul class="paper-list">
+                <li>
+                  <a href="https://www.restud.com/bank-information-production-over-the-business-cycle/">Bank Information Production Over the Business Cycle <span aria-hidden="true">↗</span></a>
+                  <span class="paper-note">Research assistance · Review of Economic Studies</span>
+                </li>
+                <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3488797">Margin Lending and Information Production <span aria-hidden="true">↗</span></a></li>
+                <li><a href="https://arxiv.org/abs/2402.15418">Reputational Algorithm Aversion <span aria-hidden="true">↗</span></a></li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
-    .contact {
-      text-align: center;
-      font-size: 14px;
-      margin: 0 0 28px;
-    }
+        <section class="section" id="work" aria-labelledby="work-heading">
+          <div class="section-label">
+            <span class="section-number" aria-hidden="true">02</span>
+            <h2 id="work-heading">Things I’ve built</h2>
+          </div>
+          <div class="section-content">
+            <article class="entry">
+              <div class="entry-heading">
+                <h3><a href="https://www.topsoj.com">TopsOJ <span aria-hidden="true">↗</span></a></h3>
+                <p class="date">2023–2026</p>
+              </div>
+              <p class="role">Founder · Online mathematics platform</p>
+              <p>I built and scaled a platform for practising competition maths. I led a team of 30 across development, problem setting and live competitions, designed an ELO-style rating system, and helped create more than 50 contests.</p>
+              <dl class="stats">
+                <div><dt>Active users</dt><dd>100k+</dd></div>
+                <div><dt>Submissions</dt><dd>140k+</dd></div>
+                <div><dt>Contests</dt><dd>50+</dd></div>
+              </dl>
+            </article>
 
-    .contact a {
-      color: #000;
-      text-decoration: none;
-    }
+            <article class="entry">
+              <div class="entry-heading">
+                <h3><a href="https://usemason.ai">Mason AI <span aria-hidden="true">↗</span></a></h3>
+                <p class="date">Summer 2026</p>
+              </div>
+              <p class="role">Software engineering intern</p>
+              <p>I built an automated sales pipeline across email, phone and mail that reached 500+ leads and booked 50+ meetings. I also built an AI-assisted QA workflow and resolved 150+ critical issues in a TypeScript and Next.js codebase.</p>
+            </article>
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
+            <article class="entry">
+              <div class="entry-heading">
+                <h3><a href="https://github.com/Festyve/Daedalus">Daedalus <span aria-hidden="true">↗</span></a></h3>
+                <p class="date">2026</p>
+              </div>
+              <p class="role">3D modelling tool · Three.js &amp; TypeScript</p>
+              <p>A collaborative hackathon project exploring 3D modelling in augmented reality. Award winner at JamHacks 2026.</p>
+            </article>
+          </div>
+        </section>
 
-    .sep {
-      margin: 0 6px;
-      color: #000;
-    }
+        <section class="section" aria-labelledby="maths-heading">
+          <div class="section-label">
+            <span class="section-number" aria-hidden="true">03</span>
+            <h2 id="maths-heading">Competition maths</h2>
+          </div>
+          <div class="section-content">
+            <p class="section-intro">Olympiads were where I first got hooked on mathematics. A few highlights:</p>
+            <dl class="distinctions">
+              <div><dt>USA Mathematical Olympiad</dt><dd>Top 120 · Honourable Mention</dd></div>
+              <div><dt>Canadian Mathematical Olympiad</dt><dd>Top 50</dd></div>
+              <div><dt>Waterloo Global Mathematics Contest</dt><dd>1st / 17,959</dd></div>
+            </dl>
+            <p>I also taught competition maths to 25 students at Leading Aces Academy from 2024 to 2026, working on everything from number theory and combinatorics to writing a clear, rigorous proof.</p>
+          </div>
+        </section>
 
-    h2 {
-      font-size: 15px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin: 26px 0 8px;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #000;
-    }
+        <section class="section" id="about" aria-labelledby="about-heading">
+          <div class="section-label">
+            <span class="section-number" aria-hidden="true">04</span>
+            <h2 id="about-heading">Away from the desk</h2>
+          </div>
+          <div class="section-content about-copy">
+            <p>Outside research and coding, I enjoy musical theatre, a cappella and playing guitar. You might also find me weightlifting, playing Spikeball or around a poker table.</p>
+            <p class="toolkit"><span class="small-label">I work with</span>Python (NumPy, pandas), TypeScript, React, Next.js, SQL, Mathematica and Git, among other tools.</p>
+            <p class="say-hello">Always happy to talk maths, research or something you’re building. <a href="mailto:alexzhang200888@gmail.com">Say hello <span aria-hidden="true">↗</span></a></p>
+          </div>
+        </section>
+      </main>
 
-    .entry {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 12px;
-      margin-top: 12px;
-    }
-
-    .entry .role {
-      font-weight: bold;
-    }
-
-    .entry .date {
-      white-space: nowrap;
-    }
-
-    ul {
-      margin: 6px 0 0;
-      padding-left: 22px;
-    }
-
-    li {
-      margin: 3px 0;
-    }
-
-    a {
-      color: #000;
-    }
-
-    em {
-      font-style: italic;
-    }
-
-    @media (max-width: 480px) {
-      .page { padding: 40px 18px 64px; }
-      h1 { font-size: 26px; }
-      .entry { flex-direction: column; gap: 0; }
-    }
-  </style>
-</head>
-<body>
-  <main class="page">
-    <h1>Alexander Zhang</h1>
-    <p class="contact">
-      University of Oxford
-      <span class="sep">&#8900;</span>
-      <a href="mailto:zdfzdf@gmail.com">zdfzdf@gmail.com</a>
-      <span class="sep">&#8900;</span>
-      <a href="https://www.linkedin.com/in/alexanderzhang314" target="_blank" rel="noopener">linkedin.com/in/alexanderzhang314</a>
-      <span class="sep">&#8900;</span>
-      <a href="https://github.com/excelexx" target="_blank" rel="noopener">github.com/excelexx</a>
-    </p>
-
-    <section>
-      <h2>Education</h2>
-      <div class="entry">
-        <span class="role">University of Oxford</span>
-        <span class="date">B.A. of Mathematics</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-
-      <div class="entry">
-        <span class="role">Mason AI &mdash; Software Engineering Intern</span>
-        <span class="date">Summer 2026</span>
-      </div>
-      <ul>
-        <li>Optimized GitHub Actions CI/CD pipelines to automate testing and deployment workflows for a production AI platform</li>
-        <li>Investigated and resolved bugs across a TypeScript/Next.js full-stack codebase, improving reliability and developer experience</li>
-      </ul>
-
-      <div class="entry">
-        <span class="role">TopsOJ.com Math Practice Platform &mdash; Founder</span>
-        <span class="date">2023&ndash;Present</span>
-      </div>
-      <ul>
-        <li>Grew <a href="https://www.topsoj.com" target="_blank" rel="noopener">www.TopsOJ.com</a> to 18,000+ active users, 100,000+ submissions, and 400,000+ website visits</li>
-        <li>Led a team of 30 staff across web development, problem setting, contest logistics, platform operations, and outreach</li>
-        <li>Hosted 50+ live contests, including multi-round events with 100+ competitors requiring problem design, testing, grading, scoring, and real-time contest support</li>
-      </ul>
-
-      <div class="entry">
-        <span class="role">McGill University &mdash; Research Assistant for Financial Mathematics</span>
-        <span class="date">2025&ndash;Present</span>
-      </div>
-      <ul>
-        <li>Assisted Prof. Gregory Weitzner with mathematical finance and economics research on bank information production, margin loans, short-term debt, and contract theory</li>
-        <li>Wrote and checked mathematical proofs, symbolic derivations, and Mathematica computations for theoretical models in financial markets and information economics</li>
-      </ul>
-
-      <div class="entry">
-        <span class="role">Leading Aces Academy &mdash; Math Instructor</span>
-        <span class="date">2024&ndash;Present</span>
-      </div>
-      <ul>
-        <li>Taught live sessions covering AMC 12 contest topics for a cohort of 25 students, including algebra, geometry, combinatorics, and number theory</li>
-        <li>Worked through solutions to build student problem-solving intuition and contest technique</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://www.topsoj.com" target="_blank" rel="noopener">TopsOJ.com</a> &mdash; Online math platform, 18k active users, 400k+ website views</li>
-        <li><a href="https://www.restud.com/bank-information-production-over-the-business-cycle/" target="_blank" rel="noopener">Bank Information Production Over the Business Cycle</a> &mdash; <em>Review of Economic Studies</em>, top five economics journal, provided research assistance on proofs</li>
-        <li><a href="https://github.com/Festyve/Daedalus" target="_blank" rel="noopener">Daedalus</a> &mdash; 3D modelling AR software, JamHacks 2026 Award winner</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Achievements</h2>
-      <ul>
-        <li>USA Mathematical Olympiad (USAMO) Honourable Mention &mdash; top 120 of 30,000+</li>
-        <li>Top 50 on the Canadian Mathematical Olympiad (CMO), selected from 5,000+</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Python, Java, TypeScript/JavaScript, HTML/CSS, Mathematica, LaTeX</li>
-        <li><strong>Software:</strong> Next.js, React, Node.js, Git, pnpm, Turborepo, Prisma, PostgreSQL</li>
-      </ul>
-    </section>
-  </main>
-</body>
+      <footer class="site-footer">
+        <p>Alexander Zhang</p>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </footer>
+    </div>
+  </body>
 </html>

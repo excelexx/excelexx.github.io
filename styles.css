@@ -1,9 +1,9 @@
 :root {
-  color-scheme: light;
-  --ink: #171717;
-  --secondary: #595959;
-  --rule: #dedede;
-  --paper: #fff;
+  color-scheme: dark;
+  --ink: #ededed;
+  --secondary: #aaa;
+  --rule: #303030;
+  --paper: #000;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-synthesis: none;
@@ -22,7 +22,7 @@ body {
 ::selection { color: var(--paper); background: var(--ink); }
 a {
   color: inherit;
-  text-decoration-color: #a0a0a0;
+  text-decoration-color: #777;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
@@ -166,6 +166,13 @@ h3 a span { font-size: 0.9em; }
   .distinctions dd { text-align: left; }
 }
 @media print {
+  :root {
+    color-scheme: light;
+    --ink: #171717;
+    --secondary: #595959;
+    --rule: #dedede;
+    --paper: #fff;
+  }
   .page { width: 100%; }
   .site-header, .contact-links, .site-footer, .skip-link { display: none; }
   .intro { padding-block: 0 2rem; }

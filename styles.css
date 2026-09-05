@@ -7,9 +7,10 @@
   --surface: #15181b;
   --accent: #d3dbe1;
   --metal-radius: 0.65rem;
+  --metal-texture: url("assets/brushed-gunmetal.jpg");
   --metal-surface:
-    repeating-linear-gradient(0deg, #ffffff03 0, #ffffff03 1px, transparent 1px, transparent 3px) padding-box,
-    linear-gradient(125deg, #30373e 0%, #1d2228 38%, #14181d 70%, #252c33 100%) padding-box,
+    linear-gradient(125deg, #10161c55 0%, #070b0f88 42%, #04070ba8 100%) padding-box,
+    var(--metal-texture) center / 768px 768px repeat padding-box,
     linear-gradient(135deg, #9ba7b3 0%, #56616c 18%, #252c34 48%, #596673 100%) border-box;
   --metal-shadow: inset 0 1px 0 #ffffff12, inset 0 -1px 0 #0009, 0 12px 32px #0005;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
@@ -65,7 +66,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-
   height: 2.75rem;
   border: 1px solid #9ba7b388;
   border-radius: 0.45rem;
-  background: linear-gradient(165deg, #697681 0%, #36414b 16%, #1a222a 55%, #303b45 100%);
+  background: linear-gradient(165deg, #69768133, #10182088 55%, #303b4533), var(--metal-texture) center / 512px 512px repeat;
   box-shadow: inset 0 1px 0 #e5edf64d, inset 0 -2px 0 #0009, 0 4px 12px #0005;
   text-shadow: 0 1px 2px #000a;
   color: #fff;
@@ -96,8 +97,11 @@ nav a:hover, nav a:focus-visible { color: var(--ink); background: #ffffff0d; }
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(122deg, transparent 25%, #9aa8b408 39%, #cfdae418 42%, #9aa8b408 45%, transparent 63%),
-    radial-gradient(ellipse at 78% 38%, #77879735, transparent 58%);
+    linear-gradient(90deg, #000 5%, #000b 52%, #0005 100%),
+    var(--metal-texture) center / 768px 768px repeat;
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 24%, #000 70%, transparent);
+  mask-image: linear-gradient(180deg, transparent, #000 24%, #000 70%, transparent);
 }
 .eyebrow {
   display: inline-block;
@@ -105,7 +109,7 @@ nav a:hover, nav a:focus-visible { color: var(--ink); background: #ffffff0d; }
   margin-bottom: 1.4rem;
   border: 1px solid #83919f45;
   border-radius: 0.35rem;
-  background: linear-gradient(175deg, #303942a3, #151b21b3);
+  background: linear-gradient(175deg, #30394266, #151b21aa), var(--metal-texture) center / 512px 512px repeat;
   box-shadow: inset 0 1px 0 #ffffff0d;
   color: #c4ccd2;
   font-size: 0.875rem;
@@ -138,7 +142,7 @@ h1 {
   padding: 0.65rem 1.1rem;
   border: 1px solid #67768480;
   border-radius: 0.45rem;
-  background: linear-gradient(170deg, #323d47, #1b2229 55%, #262f38);
+  background: linear-gradient(170deg, #323d4766, #1b2229aa 55%, #262f3866), var(--metal-texture) center / 512px 512px repeat;
   box-shadow: inset 0 1px 0 #d6e3ef26, inset 0 -1px 0 #000a, 0 3px 8px #0004;
   font-size: 0.875rem;
   text-decoration: none;

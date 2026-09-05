@@ -1,6 +1,6 @@
 # Brushed gunmetal texture
 
-`brushed-gunmetal.jpg` is a project-owned texture generated with the built-in image-generation tool, then encoded as JPEG for the website. The card surfaces use this raster texture beneath a dark overlay. Helvetica text and the metallic border remain separate HTML/CSS.
+`brushed-gunmetal.jpg` is an archived texture from a previous site design, generated with the built-in image-generation tool and encoded as JPEG. The current geometry-based website does not load this asset.
 
 ## Generation prompt
 

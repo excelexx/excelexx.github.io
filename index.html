@@ -12,6 +12,7 @@
     <meta property="og:url" content="https://excelexx.github.io/">
     <link rel="canonical" href="https://excelexx.github.io/">
     <link rel="stylesheet" href="styles.css">
+    <script src="geometry.js" defer></script>
     <title>Alexander Zhang</title>
   </head>
   <body id="top">
@@ -28,27 +29,65 @@
 
       <main id="main" tabindex="-1">
         <section class="intro" aria-labelledby="name">
-          <p class="eyebrow">Mathematics · Machine learning · Software</p>
-          <h1 id="name">Alexander <span class="name-gradient">Zhang.</span></h1>
-          <div class="intro-bottom">
-            <div class="intro-copy">
-              <p>I like understanding how things work, then building something with what I learn.</p>
-              <p>I’m starting a BA in Mathematics at the University of Oxford in October 2026. My work spans machine learning research, mathematical finance and software. I also founded <a href="https://www.topsoj.com">TopsOJ</a>, a home for people who enjoy solving maths problems.</p>
-            </div>
+          <div class="intro-copy">
+            <h1 id="name">Alexander Zhang</h1>
+            <p>I’m starting a BA in Mathematics at the University of Oxford in October 2026.</p>
+            <p>My work spans machine learning research, mathematical finance and software. I also founded <a href="https://www.topsoj.com">TopsOJ</a>, a home for people who enjoy solving competition maths.</p>
             <ul class="contact-links" aria-label="Contact and profiles">
-              <li><a href="mailto:alexzhang200888@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
-              <li><a href="https://github.com/excelexx">GitHub <span aria-hidden="true">↗</span></a></li>
-              <li><a href="https://www.linkedin.com/in/alexanderzhang314">LinkedIn <span aria-hidden="true">↗</span></a></li>
+              <li><a href="mailto:alexzhang200888@gmail.com">Email</a></li>
+              <li><a href="https://github.com/excelexx">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/alexanderzhang314">LinkedIn</a></li>
             </ul>
           </div>
+
+          <figure class="geometry" aria-labelledby="geometry-caption">
+            <div class="geometry-stage">
+              <svg id="geometry-diagram" viewBox="0 0 480 440" role="img" aria-labelledby="diagram-title diagram-description">
+                <title id="diagram-title">Triangle ABC and its circumcircle</title>
+                <desc id="diagram-description">A circle passes through all three vertices of the triangle. Its centre O is equally distant from A, B and C.</desc>
+                <g id="construction-lines" class="construction-lines" visibility="hidden" aria-hidden="true">
+                  <line></line>
+                  <line></line>
+                  <line></line>
+                </g>
+                <circle id="circumcircle" class="circumcircle" cx="234.959411" cy="230.728368" r="165.529094"></circle>
+                <polygon id="triangle" class="triangle" points="188,72 82,294 395,273"></polygon>
+                <g id="circumcentre">
+                  <circle id="centre-point" cx="234.959411" cy="230.728368" r="2.5"></circle>
+                  <text id="centre-label" x="248.959411" y="225.728368">O</text>
+                </g>
+                <g class="vertex-drawing">
+                  <circle data-point="0" cx="188" cy="72" r="4"></circle>
+                  <circle data-point="1" cx="82" cy="294" r="4"></circle>
+                  <circle data-point="2" cx="395" cy="273" r="4"></circle>
+                  <text data-label="0" x="174" y="52">A</text>
+                  <text data-label="1" x="58" y="309">B</text>
+                  <text data-label="2" x="413" y="284">C</text>
+                </g>
+              </svg>
+              <div id="vertex-controls" hidden>
+                <button type="button" class="vertex-handle" data-vertex="0" aria-label="Move vertex A" aria-describedby="geometry-help" style="left:39.166667%;top:16.363636%"><span aria-hidden="true"></span></button>
+                <button type="button" class="vertex-handle" data-vertex="1" aria-label="Move vertex B" aria-describedby="geometry-help" style="left:17.083333%;top:66.818182%"><span aria-hidden="true"></span></button>
+                <button type="button" class="vertex-handle" data-vertex="2" aria-label="Move vertex C" aria-describedby="geometry-help" style="left:82.291667%;top:62.045455%"><span aria-hidden="true"></span></button>
+              </div>
+            </div>
+            <figcaption id="geometry-caption">
+              <span class="geometry-identity" id="geometry-status" aria-live="polite">OA = OB = OC</span>
+              <div class="geometry-controls" id="geometry-controls" hidden>
+                <label><input id="show-construction" type="checkbox"> Construction lines</label>
+                <button id="reset-geometry" type="button">Reset</button>
+              </div>
+            </figcaption>
+            <p class="geometry-help" id="geometry-help" hidden>Drag a vertex, or focus it and use the arrow keys.<span class="sr-only"> Hold Shift for larger steps. Home restores the selected vertex.</span></p>
+          </figure>
         </section>
 
         <section class="section" id="research" aria-labelledby="research-heading">
           <div class="section-label">
             <h2 id="research-heading">Research</h2>
           </div>
-          <div class="section-content card-grid">
-            <article class="entry entry--ml">
+          <div class="section-content">
+            <article class="entry">
               <div class="entry-heading">
                 <h3>Machine learning</h3>
                 <p class="date">2026–present</p>
@@ -61,7 +100,7 @@
               <p class="entry-links"><a href="https://github.com/excelexx/jspace-convergence">Code &amp; experiments <span aria-hidden="true">↗</span></a></p>
             </article>
 
-            <article class="entry entry--finance">
+            <article class="entry">
               <div class="entry-heading">
                 <h3>Mathematical finance</h3>
                 <p class="date">2025–2026</p>
@@ -84,22 +123,18 @@
           <div class="section-label">
             <h2 id="work-heading">Things I’ve built</h2>
           </div>
-          <div class="section-content card-grid">
-            <article class="entry entry--topsoj">
+          <div class="section-content">
+            <article class="entry">
               <div class="entry-heading">
                 <h3><a href="https://www.topsoj.com">TopsOJ <span aria-hidden="true">↗</span></a></h3>
                 <p class="date">2023–2026</p>
               </div>
               <p class="role">Founder · Online mathematics platform</p>
               <p>I built and scaled a platform for practising competition maths. I led a team of 30 across development, problem setting and live competitions, designed an ELO-style rating system, and helped create more than 50 contests.</p>
-              <dl class="stats">
-                <div><dt>Active users</dt><dd>100k+</dd></div>
-                <div><dt>Submissions</dt><dd>140k+</dd></div>
-                <div><dt>Contests</dt><dd>50+</dd></div>
-              </dl>
+              <p class="project-scale">100,000+ active users · 140,000+ submissions</p>
             </article>
 
-            <article class="entry entry--mason">
+            <article class="entry">
               <div class="entry-heading">
                 <h3><a href="https://usemason.ai">Mason AI <span aria-hidden="true">↗</span></a></h3>
                 <p class="date">Summer 2026</p>
@@ -108,7 +143,7 @@
               <p>I built an automated sales pipeline across email, phone and mail that reached 500+ leads and booked 50+ meetings. I also built an AI-assisted QA workflow and resolved 150+ critical issues in a TypeScript and Next.js codebase.</p>
             </article>
 
-            <article class="entry entry--daedalus">
+            <article class="entry">
               <div class="entry-heading">
                 <h3><a href="https://github.com/Festyve/Daedalus">Daedalus <span aria-hidden="true">↗</span></a></h3>
                 <p class="date">2026</p>

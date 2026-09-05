@@ -45,6 +45,30 @@
               <svg id="geometry-diagram" viewBox="0 0 480 440" role="img" aria-labelledby="diagram-title diagram-description">
                 <title id="diagram-title">Triangle ABC and its circumcircle</title>
                 <desc id="diagram-description">A circle passes through all three vertices of the triangle. Its centre O is equally distant from A, B and C.</desc>
+                <defs>
+                  <!-- Keep filter surfaces bounded even when dragging produces a very large circle. -->
+                  <filter id="line-glow" filterUnits="userSpaceOnUse" x="-16" y="-16" width="512" height="472" color-interpolation-filters="sRGB">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="halo"></feGaussianBlur>
+                    <feComponentTransfer in="halo" result="soft-halo">
+                      <feFuncA type="linear" slope="0.7"></feFuncA>
+                    </feComponentTransfer>
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1.1" result="near-glow"></feGaussianBlur>
+                    <feMerge>
+                      <feMergeNode in="soft-halo"></feMergeNode>
+                      <feMergeNode in="near-glow"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                  <filter id="point-glow" filterUnits="userSpaceOnUse" x="-16" y="-16" width="512" height="472" color-interpolation-filters="sRGB">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="halo"></feGaussianBlur>
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="near-glow"></feGaussianBlur>
+                    <feMerge>
+                      <feMergeNode in="halo"></feMergeNode>
+                      <feMergeNode in="near-glow"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
                 <g id="construction-lines" class="construction-lines" visibility="hidden" aria-hidden="true">
                   <line></line>
                   <line></line>

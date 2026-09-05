@@ -38,12 +38,13 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.65rem); font-weight: 500; line-height: 1.2;
 .geometry-stage { position: relative; width: 100%; aspect-ratio: 12 / 11; }
 #geometry-diagram { display: block; width: 100%; height: 100%; overflow: hidden; }
 #geometry-diagram circle, #geometry-diagram line, #geometry-diagram polygon { vector-effect: non-scaling-stroke; }
-.circumcircle { fill: none; stroke: #777; stroke-width: 1; }
-.triangle { fill: none; stroke: #ddd; stroke-width: 1.25; stroke-linejoin: round; }
-.construction-lines { stroke: #626262; stroke-width: 1; stroke-dasharray: 4 6; }
+.circumcircle { fill: none; stroke: #aaa; stroke-width: 1; filter: url(#line-glow); }
+.triangle { fill: none; stroke: #e8e8e8; stroke-width: 1.25; stroke-linejoin: round; filter: url(#line-glow); }
+.construction-lines { stroke: #777; stroke-width: 1; stroke-dasharray: 4 6; }
 #circumcentre { fill: #aaa; }
+#centre-point { fill: #ddd; filter: url(#point-glow); }
 #geometry-diagram text { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 18px; user-select: none; }
-.vertex-drawing circle { fill: #eee; stroke: #000; stroke-width: 2; }
+.vertex-drawing circle { fill: #fff; stroke: none; filter: url(#point-glow); }
 .vertex-drawing text { fill: #ddd; }
 .vertex-handle {
   position: absolute;
@@ -61,7 +62,7 @@ h1 { font-size: clamp(2rem, 3.5vw, 2.65rem); font-weight: 500; line-height: 1.2;
   -webkit-tap-highlight-color: transparent;
 }
 .vertex-handle span { width: 18px; height: 18px; border: 1px solid transparent; border-radius: 50%; pointer-events: none; }
-.vertex-handle:hover span, .vertex-handle:focus-visible span, .vertex-handle.dragging span { border-color: #888; }
+.vertex-handle:hover span, .vertex-handle:focus-visible span, .vertex-handle.dragging span { border-color: #bbb; box-shadow: 0 0 9px #ffffff40, inset 0 0 6px #ffffff20; }
 .vertex-handle.dragging { cursor: grabbing; }
 .geometry figcaption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1.25rem; }
 .geometry-identity { font-family: Georgia, "Times New Roman", serif; font-size: 0.9375rem; color: #bbb; }
@@ -135,10 +136,11 @@ h3 a span { font-size: 0.9375rem; color: var(--secondary); }
   .distinctions div { flex-direction: column; gap: 0.1rem; }
 }
 @media (forced-colors: active) {
+  .circumcircle, .triangle, #centre-point, .vertex-drawing circle { filter: none; }
   .circumcircle, .triangle, .construction-lines { stroke: CanvasText; }
-  #circumcentre, .vertex-drawing circle, .vertex-drawing text { fill: CanvasText; }
+  #circumcentre, #centre-point, .vertex-drawing circle, .vertex-drawing text { fill: CanvasText; }
   .vertex-drawing circle { stroke: Canvas; }
-  .vertex-handle span { border-color: CanvasText; }
+  .vertex-handle span { border-color: CanvasText; box-shadow: none !important; }
 }
 @media print {
   :root { color-scheme: light; --ink: #171717; --secondary: #444; --muted: #555; --rule: #ccc; --paper: #fff; }
@@ -148,7 +150,10 @@ h3 a span { font-size: 0.9375rem; color: var(--secondary); }
   .intro-copy > p { font-size: 0.875rem; }
   .section { margin-bottom: 2rem; padding-top: 1.5rem; }
   .entry, .geometry { break-inside: avoid; }
+  .circumcircle, .triangle, #centre-point, .vertex-drawing circle { filter: none; }
+  .circumcircle { stroke: #777; }
   .triangle { stroke: #222; }
+  #circumcentre, #centre-point { fill: #444; }
   .vertex-drawing circle { fill: #222; stroke: #fff; }
   .vertex-drawing text { fill: #222; }
   .geometry-identity, .project-scale { color: #444; }
